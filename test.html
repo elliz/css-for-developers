@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+        <title>Test sandbox page</title>
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="lib/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="lib/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="lib/favicon/favicon.ico">
+        
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/extra.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        
+        <script src="lib/js/head.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+                
+                <section>
+                    <h1>Sandbox</h1>
+                    <p>Experimental area to check it all works</p>
+                </section>
+
+                <section>
+                    <h1>Page 2</h1>
+                    <p>Check out sub pages</p>
+
+                    <section>
+                        <p>sub 1</p>
+                    </section>
+                    <section>
+                        <p>sub 2</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>Side by side columns</h1>
+                    <div class="columns">
+                        <div data-markdown>
+                            <textarea data-template>
+                                ```html
+                                <svg>
+                                    <path 
+                                      stroke="yellow" 
+                                      d="m0 0 L 200 200  />"/>
+                                </svg>
+                                ```
+                            </textarea>
+                        </div>
+                        <div>
+                            <svg>
+                                <path stroke="yellow" stroke-width="4" d="m0 0 L 200 200 H0 z />"/>
+                                <path class="fragment" stroke="red" stroke-width="4" d="m5 0 L 200 200 H0 z />"/>
+                                <path class="fragment" stroke="blue" stroke-width="4" d="m10 0 L 200 200 H0 z />"/>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="split-bg">
+                    <div class="columns">
+                        <div>
+                            Gotcha
+                        </div>
+                        <div>
+                            You sweetheart
+                        </div>
+                    </div>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Markdown page
+                
+                        text and [link](https://google.com).
+
+                        * bullet 1
+                        * bullet 2
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Coding w markdown
+                
+                        ```html
+                        <svg>
+                            <path d="m1 2 l 3 4" />
+                        </svg>
+                        ```
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <!-- .slide: data-background="tomato" -->
+                        ## markdown fragments
+                        - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+                        - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+                    </script>
+                </section>
+            
+            </div>
+		</div>
+
+        <script src="js/reveal.js"></script>
+
+		<script>
+            Reveal.initialize({
+                controls: true,
+                controlsTutorial: false,
+                progress: true,
+                slideNumber: false,
+                history: true,
+                center: true,
+                touch: true,
+                transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/notes/notes.js' }
+                ]
+            });
+		</script>
+
+	</body>
+</html>

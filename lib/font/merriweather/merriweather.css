@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Regular.eot');
+    src: url('Merriweather-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Italic.eot');
+    src: url('Merriweather-Italic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('souMerriweather-Bold.eot');
+    src: url('Merriweather-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-BoldItalic.eot');
+    src: url('Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*
+Merriweather-Black
+Merriweather-BlackItalic
+
+Merriweather-Light
+Merriweather-LightItalic
+*/
