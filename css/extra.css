@@ -50,3 +50,16 @@
 .codepen:after {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.3' viewBox='0 0 24.3 24.3'%3e%3cpath d='M1.2 8.5l11-7.3 11 7.3v7.4l-11 7.3-11-7.3zm0 0l11 7.4 11-7.4m0 7.4l-11-7.4-11 7.4m11-14.7v7.3m0 7.4v7.3'/%3e%3c/svg%3e");
 }
+
+.reveal section .img {
+    background: transparent; 
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+}
+
+.reveal section .img--full {
+    height: 60vh;
+    max-width: 90vw;
+}
+
